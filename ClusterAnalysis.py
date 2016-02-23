@@ -38,6 +38,11 @@ class ClusterAnalysis:
 
         self.learningRate = 0.1
 
+    def normalize(self, array):
+        maxVal = np.amax(array)
+
+        return np.divide(array, float(maxVal))
+
     def addPattern(self,pos):
         self.patterns.append(Pattern(pos))
         self.numPatterns += 1

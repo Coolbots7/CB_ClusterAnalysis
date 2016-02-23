@@ -31,3 +31,4 @@ print minError
 print "Final Error: ",
 print clus.Error
 clus.draw()
+
